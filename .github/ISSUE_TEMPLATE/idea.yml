@@ -1,0 +1,28 @@
+name: Idea
+description: Something PhoneCanDo could do, or do better.
+title: "[Idea] "
+labels: [idea]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Big or small, we read them all. Search first: if someone had it already, a 👍 and your use case on theirs count.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The job, not the button. "I want my agent to ... while I'm ..." helps us most.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: How you picture it working.
+    validations:
+      required: true
+  - type: textarea
+    id: now
+    attributes:
+      label: How do you manage today?
+      description: A workaround, another app, or not at all.

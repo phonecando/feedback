@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://github.com/phonecando/feedback/discussions
+    about: How do I...? Why does it...? Ask in Discussions, where answers stay findable.
+  - name: Report a security hole privately
+    url: https://github.com/phonecando/feedback/security/advisories/new
+    about: Never in a public issue. This opens a private advisory only we can see.
+  - name: Phone control's code
+    url: https://github.com/phonecando/phone-control/issues
+    about: Something in the open phone-control code itself? Its issues live with it.
+  - name: Help with your install or your data
+    url: https://phonecando.app/#faq
+    about: The FAQ first; then write to support@phonecando.app.

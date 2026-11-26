@@ -1,0 +1,45 @@
+name: Ask for an agent
+description: A coding agent you'd like PhoneCanDo to run as a built-in kind.
+title: "[Agent] "
+labels: [agent-request]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        You can already add almost any agent yourself: Custom agents, in the side menu. Built in, we install and update it
+        for you and wire up the phone tools, schedules and messages to other agents for it.
+  - type: input
+    id: name
+    attributes:
+      label: Which agent?
+      placeholder: "Its name"
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Where does it live?
+      description: Its website or repo, and how it installs (npm, pip, a binary...).
+    validations:
+      required: true
+  - type: dropdown
+    id: acp
+    attributes:
+      label: Does it have an ACP mode, or a flag that starts it on a task?
+      description: Agent Client Protocol, or something like `agent -p "do this"`. It's how agents work in the background.
+      options:
+        - "Yes"
+        - "No"
+        - "Not sure"
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this one?
+      description: What it does better, what you'd use it for on your phone.
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: Tried it as a custom agent?
+      description: If you did, what worked and what didn't.

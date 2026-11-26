@@ -1,0 +1,65 @@
+name: Bug report
+description: Something in the app broke, froze or did the wrong thing.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for writing it up. Search the open issues first: a 👍 on an existing one helps more than a twin.
+        Everything here is public: no API keys, tokens, passwords or private screenshots, please.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: And what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How do we make it happen?
+      description: Step by step, from opening the app. "It happens sometimes" is fine too; say how often.
+      placeholder: |
+        1. Open ...
+        2. Tap ...
+        3. See ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Settings → About.
+      placeholder: "1.1.2"
+    validations:
+      required: true
+  - type: dropdown
+    id: channel
+    attributes:
+      label: Channel
+      description: Settings → About shows it as Channel. The starter from the website is lite.
+      options:
+        - full
+        - lite
+        - play
+        - not sure
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: Phone and Android version
+      placeholder: "Pixel 8, Android 16"
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Which agent?
+      description: If it's about an agent, which kind (Resident, Claude Code, Gemini CLI, a custom one...) and which model.
+  - type: textarea
+    id: more
+    attributes:
+      label: Anything else?
+      description: Screenshots (crop out anything private), or a note that you also sent one from the app with Send report, so we can match them up.
